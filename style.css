@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap');
+
+* {    
+    
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+  }
+a{
+    text-decoration: none;
+    color:inherit;
+}
+body{
+    font-family: "Fraunces", serif;
+}
+.navContainer{  
+    font-family: 'Barlow', sans-serif; 
+    height: 100vh;    
+    background-image: url("https://i.ibb.co/HNvHSyV/image-header.jpg");  
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+.navBar{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    align-items: center;
+}
+.navLinks{
+    display: flex;   
+    align-items: center; 
+    list-style: none;
+    gap: 2.5rem;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+.contact{
+    background-color: white;
+    color: hsl(212, 27%, 19%);    
+    padding: 15px 25px;
+    font-weight: 700;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.2s all ease-in-out;
+}
+.contact:hover{
+    color: white;
+    background-color: hsl(200, 100%, 72%)
+}
+.navMain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    padding-top: 50px;
+    color: white;
+    font-size: 45px;
+    flex-grow: 1;
+    letter-spacing: 3px ;
+}
+.arrow {
+    margin-top: 60px;
+    margin-bottom: 300px;
+}
+.gridBox{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 2100px;
+}
+.box1,.box4{  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    height:100%;
+}
+.box1 h1,.box4 h1{
+    font-size: 3rem;
+    color: hsl(212, 27%, 19%);
+}
+.box1 p, .box4 p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: hsl(232, 10%, 55%);
+    font-family: 'Barlow', sans-serif;
+    font-weight: 700;
+    
+}
+.box2{
+    background-image: url("./images/desktop/image-transform.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box3{
+    background-image: url("./images/desktop/image-stand-out.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box5{
+    color:hsl(167 40% 24%) ;  
+    background-image: url("./images/desktop/image-graphic-design.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box6{
+    color: hsl(198 62% 26%);
+    background-image: url("./images/desktop/image-photography.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box5,.box6{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 70px 240px;
+    text-align: center;
+    gap: 50px;
+}
+.box5 p, .box6 p{
+    font-size: 16px;
+    line-height: 24px;
+}
+.box5 h2, .box6 h2{   
+    font-size: 32px;
+}
+
+.info{
+    padding: 70px 25px;    
+    height: 440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    width: 600px;
+}
+
+.info .learn{   
+    color: hsl(212, 27%, 19%);    
+}
+.testimonialsBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 800px;
+    gap: 100px;
+}
+.testimonialsBox h1{
+   font-size: 24px;
+    color:  hsl(210, 4%, 67%);
+    letter-spacing: 4px;
+}
+.clientsBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
+    
+}
+.client{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 300px;
+    width: 300px;   
+    text-align: center; 
+}
+.client img{
+    border-radius: 50%;
+    width:64px;
+    height: 64px;
+}
+.client p{
+    font-size: 18px;
+    line-height: 1.6;
+    color: hsl(232, 10%, 55%);
+    font-family: 'Barlow', sans-serif;
+    font-weight: 700;
+}
+.nameBox .name{
+    color: hsl(212, 27%, 19%); 
+    font-size: 1.5rem;
+}
+.nameBox .role{
+    color:  hsl(210, 4%, 67%);
+    font-size: 12px;
+}
+.imagesBox{
+    display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;	   
+}
+.imagesBox img{   
+	width: 100%;
+}
+footer{
+    display: flex;
+    flex-direction: column;   
+    justify-content: space-evenly;
+    align-items: center;     
+    background-color: hsl(168, 34%, 41%);
+    color: hsl(167, 40%, 24%);
+    height: 400px;
+}
+.sunny{
+    font-size: 2rem;
+}
+.footerLinks{
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 400px;
+}
+.footerLinks a:hover, 
+.footerLinks a:active{
+    color: white;
+}
+.socials{
+    display: flex;
+    justify-content: space-evenly;
+    width: 200px;
+}
