@@ -14,7 +14,11 @@ a{
     color:inherit;
 }
 body{
+   
     font-family: "Fraunces", serif;
+}
+.navRightMobile{
+    display: none;
 }
 .navContainer{  
     font-family: 'Barlow', sans-serif; 
@@ -81,8 +85,8 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 5rem;
-    height:100%;
+    gap: 5rem;    
+    height: auto;
 }
 .box1 h1,.box4 h1{
     font-size: 3rem;
@@ -135,13 +139,12 @@ body{
     font-size: 32px;
 }
 
-.info{
-    padding: 70px 25px;    
+.info{        
     height: 440px;
     display: flex;
     flex-direction: column;
     justify-content: space-between; 
-    width: 600px;
+    width: 80%;
 }
 
 .info .learn{   
@@ -229,4 +232,104 @@ footer{
     display: flex;
     justify-content: space-evenly;
     width: 200px;
+}
+.hidden{
+    display: none;
+}
+@media (max-width:768px){   
+    body{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .navMain{
+        text-align: center;
+    }
+    .gridBox{
+       display: flex; 
+       flex-direction: column;       
+            
+    }
+    .box2,
+    .box3 {
+        min-height: 350px; /* Set a minimum height for these boxes */
+    }
+    .info{
+        justify-content: space-evenly; 
+    }
+    .box5,.box6{
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        padding:20px;
+        text-align: center;
+        gap: 50px;
+        min-height: 350px;
+    }
+    .clientsBox{
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .imagesBox{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: auto auto;	   
+    }
+    .navLinks{
+        display: none;
+    }
+    .testimonialsBox{
+        height: 1500px;
+        justify-content:flex-end;
+        padding-bottom: 100px;
+    }
+    .navRightMobile{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .navRightMobile button{
+        background: none;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+    .navMobileLinks{      
+        height: 100%;
+        padding: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;        
+        flex-direction: column;
+        gap: 1rem;
+        list-style: none;
+    }
+    .navMobileLinks li{
+        font-size: 1.5rem;
+        color:  hsl(210, 4%, 67%);
+    }
+    .mobileMenu{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: white;
+        width: 80%;
+        height: 40%;
+        right: 50px;
+        top: 80px;
+        bottom: 0;
+       
+    }
+     li.contactMobile{
+        color: hsl(167, 40%, 24%);
+        background-color: yellow;
+        padding: 15px;
+        border-radius: 50px;
+    }
+    .hidden{
+        display: none;
+    }
 }
